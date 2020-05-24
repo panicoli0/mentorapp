@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>128711169963-hlrav8lggvirea7lhi81dvevj91u3hqe.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.128711169963-hlrav8lggvirea7lhi81dvevj91u3hqe</string>
+	<key>API_KEY</key>
+	<string>AIzaSyCsoSqTyP8M_N05lqXgo2Wv9iGBRLWfIuc</string>
+	<key>GCM_SENDER_ID</key>
+	<string>128711169963</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.panicoli.educational</string>
+	<key>PROJECT_ID</key>
+	<string>educationalapp-c60e1</string>
+	<key>STORAGE_BUCKET</key>
+	<string>educationalapp-c60e1.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:128711169963:ios:6498c0184cc3c2e6afe4ee</string>
+	<key>DATABASE_URL</key>
+	<string>https://educationalapp-c60e1.firebaseio.com</string>
+</dict>
+</plist>

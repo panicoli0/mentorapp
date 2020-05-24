@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "128711169963",
+    "firebase_url": "https://educationalapp-c60e1.firebaseio.com",
+    "project_id": "educationalapp-c60e1",
+    "storage_bucket": "educationalapp-c60e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:128711169963:android:95d11168ca0e8a5aafe4ee",
+        "android_client_info": {
+          "package_name": "com.panicoli.educational"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "128711169963-teu0dmg4i3r7dnsulpu6tbljlj60mjgg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC9wkab3VitUcBLSUUwOsmlg9f4Q1oL70M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "128711169963-teu0dmg4i3r7dnsulpu6tbljlj60mjgg.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "128711169963-hlrav8lggvirea7lhi81dvevj91u3hqe.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.panicoli.educational"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
