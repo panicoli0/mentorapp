@@ -1,5 +1,7 @@
 import 'package:educational/User/model/user.dart';
 import 'package:educational/User/ui/widgets/button_bar.dart';
+import 'package:educational/User/ui/widgets/gradient_back.dart';
+import 'package:educational/User/ui/widgets/profile_background.dart';
 import 'package:educational/User/ui/widgets/user_info.dart';
 import 'package:flutter/material.dart';
 import 'package:generic_bloc_provider/generic_bloc_provider.dart';
@@ -35,7 +37,7 @@ class ProfileHeader extends StatelessWidget {
       return Container(
         margin: EdgeInsets.only(left: 20.0, right: 20.0, top: 50.0),
         child: Column(children: <Widget>[
-//          CircularProgressIndicator(),
+          CircularProgressIndicator(),
           Text('No se pudo cargar, hace login'),
         ]),
       );
@@ -55,17 +57,28 @@ class ProfileHeader extends StatelessWidget {
             fontWeight: FontWeight.bold,
             fontSize: 30.0),
       );
-      return Container(
-        margin: EdgeInsets.only(left: 20.0, right: 20.0, top: 50.0),
-        child: Column(
-          children: <Widget>[
-            Row(
-              children: <Widget>[title],
+      return Stack(
+        children: <Widget>[
+          GradientBack(
+            height: 300.0,
+          ),
+          Container(
+            margin: EdgeInsets.only(
+              left: 20.0,
+              right: 20.0,
+              top: 50.0,
             ),
-            UserInfo(user),
-            ButtonsBar()
-          ],
-        ),
+            child: Column(
+              children: <Widget>[
+                Row(
+                  children: <Widget>[title],
+                ),
+                UserInfo(user),
+                ButtonsBar(),
+              ],
+            ),
+          ),
+        ],
       );
     }
   }
