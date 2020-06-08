@@ -38,6 +38,7 @@ class DetailsScreen extends StatelessWidget {
                               child: Row(
                                 children: <Widget>[
                                   IconButton(
+                                    padding: EdgeInsets.all(20.0),
                                     icon: Icon(Icons.arrow_back,
                                         color: Colors.white),
                                     onPressed: () => Navigator.pop(context),
@@ -197,8 +198,11 @@ class DetailsScreen extends StatelessWidget {
               height: 50,
               child: RaisedButton(
                 color: courses[index]['color'],
-                child: Text("Watch Course", style: TextStyle(color: Colors.white),),
-                onPressed: (){},
+                child: Text(
+                  "Watch Course",
+                  style: TextStyle(color: Colors.white),
+                ),
+                onPressed: () {},
               ),
             ),
           ],
