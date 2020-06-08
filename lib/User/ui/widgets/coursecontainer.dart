@@ -67,6 +67,7 @@ class CourseContainer extends StatelessWidget {
                         ],
                       ),
                       child: CircleAvatar(
+                        maxRadius: 25.0,
                         backgroundImage:
                             NetworkImage(courses[index]['author_img']),
                       ),
