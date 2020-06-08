@@ -17,7 +17,7 @@ class CupertinoBar extends StatelessWidget {
           BottomNavigationBarItem(
               icon: Icon(Icons.home, color: Colors.indigo), title: Text("")),
           BottomNavigationBarItem(
-              icon: Icon(Icons.search, color: Colors.indigo), title: Text("")),
+              icon: Icon(Icons.explore, color: Colors.indigo), title: Text("")),
           BottomNavigationBarItem(
               icon: Icon(Icons.person, color: Colors.indigo), title: Text("")),
         ]),

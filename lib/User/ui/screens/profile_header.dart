@@ -73,8 +73,8 @@ class ProfileHeader extends StatelessWidget {
                 Row(
                   children: <Widget>[title],
                 ),
-                UserInfo(user),
                 ButtonsBar(),
+                UserInfo(user),
               ],
             ),
           ),
