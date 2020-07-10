@@ -1,7 +1,7 @@
-import 'package:educational/User/ui/screens/profile_header.dart';
-import 'package:educational/cupertino_bar.dart';
+import 'package:afterparty/User/ui/screens/profile_header.dart';
+import 'package:afterparty/cupertino_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:educational/User/ui/screens/home.dart';
+import 'package:afterparty/User/ui/screens/home.dart';
 //import 'package:platzi_trips_app/Place/ui/screens/home_trips.dart';
 //import 'package:platzi_trips_app/Place/ui/screens/search_trips.dart';
 //import 'package:platzi_trips_app/User/ui/screens/profile_trips.dart';

@@ -1,9 +1,9 @@
-import 'package:educational/components/rounded_button.dart';
-import 'package:educational/cupertino_bar.dart';
+import 'package:afterparty/components/rounded_button.dart';
+import 'package:afterparty/cupertino_bar.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'home.dart';
-import 'package:educational/User/bloc/bloc_user.dart';
+import 'package:afterparty/User/bloc/bloc_user.dart';
 import 'package:generic_bloc_provider/generic_bloc_provider.dart';
 
 class SignInScreen extends StatefulWidget {

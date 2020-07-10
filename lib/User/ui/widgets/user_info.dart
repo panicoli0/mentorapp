@@ -1,4 +1,4 @@
-import 'package:educational/User/model/user.dart';
+import 'package:afterparty/User/model/user.dart';
 import 'package:flutter/material.dart';
 
 class UserInfo extends StatelessWidget {

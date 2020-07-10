@@ -1,4 +1,5 @@
-import 'package:educational/global.dart';
+import 'package:afterparty/Partys/ui/screens/party_screen.dart';
+import 'package:afterparty/global.dart';
 import 'package:flutter/material.dart';
 
 class DetailsScreen extends StatelessWidget {
@@ -34,17 +35,21 @@ class DetailsScreen extends StatelessWidget {
                             child: Container(
                               alignment: Alignment.topCenter,
                               padding: EdgeInsets.symmetric(horizontal: 15.0),
-                              color: courses[index]['color'],
+                              color: partys[index]['color'],
                               child: Row(
                                 children: <Widget>[
                                   IconButton(
-                                    padding: EdgeInsets.all(20.0),
+                                    padding: EdgeInsets.only(
+                                        left: 5.0,
+                                        top: 50.0,
+                                        right: 5.0,
+                                        bottom: 50.0),
                                     icon: Icon(Icons.arrow_back,
                                         color: Colors.white),
                                     onPressed: () => Navigator.pop(context),
                                   ),
                                   Text(
-                                    "${courses[index]['cat']}",
+                                    "${partys[index]['cat']}",
                                     style: Theme.of(context)
                                         .textTheme
                                         .title
@@ -52,7 +57,7 @@ class DetailsScreen extends StatelessWidget {
                                   ),
                                   Spacer(),
                                   Text(
-                                    "${courses[index]['price']}",
+                                    "${partys[index]['price']}",
                                     style: Theme.of(context)
                                         .textTheme
                                         .title
@@ -81,7 +86,7 @@ class DetailsScreen extends StatelessWidget {
                               child: ClipRRect(
                                 borderRadius: BorderRadius.circular(25.0),
                                 child: Image.network(
-                                  courses[index]['course_banner'],
+                                  partys[index]['party_banner'],
                                   fit: BoxFit.cover,
                                 ),
                               ),
@@ -104,7 +109,7 @@ class DetailsScreen extends StatelessWidget {
                               ),
                               child: CircleAvatar(
                                 backgroundImage:
-                                    NetworkImage(courses[index]['author_img']),
+                                    NetworkImage(partys[index]['author_img']),
                               ),
                             ),
                           )
@@ -116,28 +121,55 @@ class DetailsScreen extends StatelessWidget {
                       child: Column(
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: <Widget>[
-                          RichText(
-                            text: TextSpan(
-                              children: [
-                                TextSpan(
-                                  text: "Course by: ",
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .subtitle
-                                      .apply(
-                                        color: courses[index]['color'],
-                                      ),
-                                ),
-                                TextSpan(
-                                  text: "${courses[index]['author']}",
-                                  style:
-                                      Theme.of(context).textTheme.title.apply(
-                                            color: courses[index]['color'],
+                          Row(
+                            children: <Widget>[
+                              RichText(
+                                text: TextSpan(
+                                  children: [
+                                    TextSpan(
+                                      text: "Event by: ",
+                                      style: Theme.of(context)
+                                          .textTheme
+                                          .subtitle
+                                          .apply(
+                                            color: partys[index]['color'],
+                                          ),
+                                    ),
+                                    TextSpan(
+                                      text: "${partys[index]['author']}",
+                                      style: Theme.of(context)
+                                          .textTheme
+                                          .title
+                                          .apply(
+                                            color: partys[index]['color'],
                                             fontWeightDelta: 2,
                                           ),
+                                    ),
+                                  ],
                                 ),
-                              ],
-                            ),
+                              ),
+                              Spacer(
+                                flex: 1,
+                              ),
+                              RichText(
+                                text: TextSpan(
+                                  children: [
+                                    TextSpan(
+                                      text: "Currently Playing: ",
+                                      style: Theme.of(context)
+                                          .textTheme
+                                          .subtitle
+                                          .apply(
+                                            color: partys[index]['color'],
+                                          ),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                              Spacer(
+                                flex: 3,
+                              ),
+                            ],
                           ),
                           SizedBox(
                             height: 15.0,
@@ -145,25 +177,26 @@ class DetailsScreen extends StatelessWidget {
                           Row(
                             children: <Widget>[
                               Icon(
-                                Icons.play_arrow,
-                                color: courses[index]['color'],
+                                Icons.supervised_user_circle,
+                                color: partys[index]['color'],
                               ),
-                              Text("${courses[index]['video_count']} Videos"),
+                              Text(
+                                  "${partys[index]['user_count']} Active Users"),
                               Spacer(),
                               Icon(
                                 Icons.play_arrow,
-                                color: courses[index]['color'],
+                                color: partys[index]['color'],
                               ),
-                              Text("${courses[index]['length']}"),
+                              Text("${partys[index]['playing']}"),
                               Spacer(),
                               Container(
                                 decoration: BoxDecoration(
-                                    color: courses[index]['color'],
+                                    color: partys[index]['color'],
                                     borderRadius: BorderRadius.circular(15.0)),
                                 padding: EdgeInsets.symmetric(
                                     horizontal: 15.0, vertical: 5.0),
                                 child: Text(
-                                  "${courses[index]['cat']}",
+                                  "${partys[index]['cat']}",
                                   style: TextStyle(
                                       color: Colors.white,
                                       fontWeight: FontWeight.bold),
@@ -178,7 +211,7 @@ class DetailsScreen extends StatelessWidget {
                           ),
                           SizedBox(height: 9.0),
                           Text(
-                            "${courses[index]['description']}",
+                            "${partys[index]['description']}",
                             style: Theme.of(context)
                                 .textTheme
                                 .body1
@@ -197,12 +230,20 @@ class DetailsScreen extends StatelessWidget {
               right: 0,
               height: 50,
               child: RaisedButton(
-                color: courses[index]['color'],
+                color: partys[index]['color'],
                 child: Text(
-                  "Watch Course",
+                  "Join Party",
                   style: TextStyle(color: Colors.white),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  // Esto te va a llevar a la Party en cuestion
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (context) => PartyScreen(),
+                    ),
+                  );
+                },
               ),
             ),
           ],

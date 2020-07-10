@@ -1,5 +1,5 @@
-import 'package:educational/components/rounded_button.dart';
-import 'package:educational/User/ui/screens/home.dart';
+import 'package:afterparty/components/rounded_button.dart';
+import 'package:afterparty/User/ui/screens/home.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 

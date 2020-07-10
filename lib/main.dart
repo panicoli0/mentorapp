@@ -1,7 +1,7 @@
-import 'package:educational/User/bloc/bloc_user.dart';
-import 'package:educational/User/ui/screens/profile_header.dart';
-import 'package:educational/User/ui/screens/profile_tab.dart';
-import 'package:educational/User/ui/screens/screens.dart';
+import 'package:afterparty/User/bloc/bloc_user.dart';
+import 'package:afterparty/User/ui/screens/profile_header.dart';
+import 'package:afterparty/User/ui/screens/profile_tab.dart';
+import 'package:afterparty/User/ui/screens/screens.dart';
 import 'package:flutter/material.dart';
 import 'package:generic_bloc_provider/generic_bloc_provider.dart';
 

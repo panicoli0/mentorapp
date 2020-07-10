@@ -1,9 +1,9 @@
-import 'package:educational/User/bloc/bloc_user.dart';
-import 'package:educational/User/ui/screens/profile_header.dart';
-import 'package:educational/User/ui/screens/profile_tab.dart';
-import 'package:educational/cupertino_bar.dart';
-import 'package:educational/global.dart';
-import 'package:educational/User/ui/widgets/coursecontainer.dart';
+import 'package:afterparty/User/bloc/bloc_user.dart';
+import 'package:afterparty/User/ui/screens/profile_header.dart';
+import 'package:afterparty/User/ui/screens/profile_tab.dart';
+import 'package:afterparty/cupertino_bar.dart';
+import 'package:afterparty/global.dart';
+import 'package:afterparty/User/ui/widgets/partycontainer.dart';
 import 'package:flutter/material.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:generic_bloc_provider/generic_bloc_provider.dart';
@@ -125,16 +125,16 @@ class _HomeScreenState extends State<HomeScreen> {
             Padding(
               padding: const EdgeInsets.all(15.0),
               child: Text(
-                "Courses",
+                "Party Rooms",
                 style:
                     Theme.of(context).textTheme.title.apply(fontWeightDelta: 2),
               ),
             ),
             Expanded(
               child: ListView.builder(
-                itemCount: courses.length,
+                itemCount: partys.length,
                 itemBuilder: (ctx, i) {
-                  return CourseContainer(index: i);
+                  return PartyContainer(index: i);
                 },
               ),
             ),

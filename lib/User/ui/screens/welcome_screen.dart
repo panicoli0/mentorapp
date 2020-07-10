@@ -1,5 +1,5 @@
-import 'package:educational/components/rounded_button.dart';
-import 'package:educational/User/ui/screens/registration_screen.dart';
+import 'package:afterparty/components/rounded_button.dart';
+import 'package:afterparty/User/ui/screens/registration_screen.dart';
 import 'login_screen.dart';
 import 'package:flutter/material.dart';
 
@@ -24,11 +24,11 @@ class _WelcomeScreenState extends State<WelcomeScreen> {
             Row(
               children: <Widget>[
                 Container(
-                  child: Image.asset('images/logo.png'),
+                  child: Image.asset('images/logoAfterParty.png'),
                   height: 60.0,
                 ),
                 Text(
-                  'Mentor',
+                  'After Party',
                   style: TextStyle(
                     fontSize: 45.0,
                     fontWeight: FontWeight.w900,
